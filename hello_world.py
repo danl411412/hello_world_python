@@ -10,7 +10,6 @@ def main():
     time_of_day_category = ""
     message = "Hello, " # Default greeting if time input is invalid or not categorized
 
-
     try:
         current_hour = int(time_input)
 
@@ -27,20 +26,9 @@ def main():
         elif 18 <= current_hour <= 23 or 0 <= current_hour < 5:
             time_of_day_category = "evening"
             message = "Good evening, "
-        # Handle invalid hours (outside 0-23 range)
-        # else:
-        #     time_of_day_category = "unknown"
-        #     # message = "That doesn't seem like a valid hour (0-23)."
-
-        # 4. Print the result using the stored variable
-        # if time_of_day_category == "unknown":
-        #     # print(f"\nBased on the hour {current_hour}, it is currently the {time_of_day_category}.")
-        #     print({message})
-        # else:
-        #     print(f"\n{message}")
 
     except ValueError:
-        print("\nInvalid input. Please enter a whole number for the hour.")
+        print("Invalid input. Please enter a whole number for the hour.")
     except Exception as e:
         print(f"\nAn unexpected error occurred: {e}")
 
