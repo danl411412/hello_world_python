@@ -8,7 +8,7 @@ def main():
 
     # Initialize a variable to store the time of day category
     time_of_day_category = ""
-    message = "Hello, " # Default greeting if time input is invalid or not categorized
+    message = "Welcome, " # Default greeting if time input is invalid or not categorized
 
     try:
         current_hour = int(time_input)
