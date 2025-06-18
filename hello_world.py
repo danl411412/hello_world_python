@@ -17,7 +17,7 @@ def main():
         # Morning: 5 AM to 11 AM (inclusive of 5, exclusive of 12)
         if 5 <= current_hour < 12:
             time_of_day_category = "morning"
-            message = "Good morning, "
+            message = "Guten morgen, "
         # Afternoon: 12 PM to 5 PM (inclusive of 12, exclusive of 18)
         elif 12 <= current_hour < 18:
             time_of_day_category = "afternoon"
