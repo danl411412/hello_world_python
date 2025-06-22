@@ -13,6 +13,14 @@ def main():
     try:
         current_hour = int(time_input)
 
+        # Check for edge cases: negative numbers or numbers greater than 23
+        if current_hour < 0:
+            print("Invalid input. Hour cannot be negative. Please enter a number between 0 and 23.")
+            return
+        elif current_hour > 23:
+            print("Invalid input. Hour cannot be greater than 23. Please enter a number between 0 and 23.")
+            return
+
         # Use if/elif/else to determine the time of day category
         # Morning: 5 AM to 11 AM (inclusive of 5, exclusive of 12)
         if 5 <= current_hour < 12:
